@@ -14,8 +14,8 @@
 }
 
 :root {
-  --main-color: #d90429;
-  --text-color: #000;
+  --main-color: #e9df7f;
+  --text-color: #64421f;
   --bg-color: #fff;
 }
 section {
@@ -66,7 +66,7 @@ header {
 .logo {
   font-size: 1.2rem;
   font-weight: 700;
-  color: var(--text-color);
+  color: var(--main-color);
 }
 
 .navbar {
@@ -75,7 +75,7 @@ header {
 }
 
 .navbar a {
-  color: var(--text-color);
+  color: var(--main-color);
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 500;
@@ -84,5 +84,45 @@ header {
 .navbar a:hover,
 .navbar .active {
   color: var(--main-color);
-  border-bottom: 3px solid var(var(--main-color));
+  border-bottom: 3px solid var(--main-color);
+}
+
+.home {
+  margin: auto;
+  width: 100%;
+  min-height: 640px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(/images/crosstrek9.webp) center left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--bg-color);
+}
+
+.home-text {
+  padding-left: 130px;
+  text-align: center;
+}
+
+.home-text h1 {
+  font-size: 2.4rem;
+}
+
+.home-text p {
+  font-size: 0.938rem;
+  font-weight: 300;
+  margin: 0.5rem 0 1.2rem;
+}
+
+.btn {
+  padding: 10px 22px;
+  border-radius: 10px;
+  background-image: linear-gradient(#e3d261,#caa728);
+  color: #3a220e;
+  font-weight: 400;
+}
+
+.btn:hover {
+  background-image: linear-gradient(#e9df7f,#dabd35);
 }
