@@ -168,10 +168,10 @@ p.general_info_label.general_info_label--pretext {
   color: #e9df7f
 }
 
-.col-md-12.features-text.features-text {
-  font-size: 2.75rem;
+.col-md-12.general-info-text {
+  font-size: 1.75rem;
 }
-.col-md-12.features-text.features-text h3 {
+.col-md-12.general-info-text h3 {
   margin-bottom: 24px;
   color: #e9df7f;
 }
@@ -180,11 +180,20 @@ p.general_info_label.general_info_label--pretext {
   padding: 0;
 }
 
-.features {
+.car-features {
   background-color: #18181b;
   color: #fbf9eb;
 }
 
-.features .about-text {
+.car-features .features-text {
   padding: 64px;
+}
+
+.col-md-6.features-text {
+  font-size: 1.75rem;
+}
+
+.col-md-6.features-text h3 {
+  margin-bottom: 24px;
+  color: #e9df7f;
 }
