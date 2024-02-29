@@ -4,10 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
@@ -19,24 +15,31 @@
   <body>
     <header>
       <nav class="nav container-fluid">
-        <i class="bx bx-menu" id="menu-icon"></i>
-        <a href="#" class="logo">Subaru Crosstek</a>
-        <ul class="navbar">
-          <li><a href="#home" class="active">Home</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="row">
+          <div class="col-xs-4 col-sm-6 col-md-6">
+            <a href="#" class="logo">Subaru Crosstek</a>
+          </div>
+          <div class="col-xs-8 col-sm-6 col-md-6">
+            <ul class="navbar">
+              <li><a href="#home" class="active">Home</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
-    <section class="home" id="home">
-      <div class="home-text">
-        <h1>Always room for stories</h1>
-        <p>
-          The 2024 Subaru Crosstek is the most poweful,most fun to drive, and
-          safest Crosstek we've ever made, with performance, technology, and
-          design updates thought.
-        </p>
-        <a href="/searchnew.aspx" class="btn">Search available inventory</a>
+    <section class="home container-fluid" id="home">
+      <div class="row">
+        <div class="col-md-3 col-lg-12 home-text">
+          <h1>Always room for stories</h1>
+          <p>
+            The 2024 Subaru Crosstek is the most poweful,most fun to drive, and
+            safest Crosstek we've ever made, with performance, technology, and
+            design updates thought.
+          </p>
+          <a href="/searchnew.aspx" class="btn">Search available inventory</a>
+        </div>
       </div>
     </section>
     <section class="about container-fluid" id="about">
@@ -82,16 +85,24 @@
           </div>
         </div>
         <div class="col-md-6">
-          <img src="images/crosstrek10.webp" alt="2024 Subaru Crosstek" />
+          <img
+            src="images/crosstrek10.webp"
+            alt="2024 Subaru Crosstek"
+            loading="lazy"
+          />
         </div>
       </div>
     </section>
 
     <section class="car-features container-fluid" id="features">
       <!-- First Item -->
-      <div class="row">
+      <div class="row" id="feature-one">
         <div class="col-md-6">
-          <img src="images/crosstrek2.webp" alt="2024 Subaru Crosstek" />
+          <img
+            src="images/crosstrek2.webp"
+            alt="Crosstek Sport Sporty Exterior Design"
+            loading="lazy"
+          />
         </div>
         <div class="col-md-6 features-text">
           <h3>Sporty Exterior Design</h3>
@@ -103,7 +114,7 @@
         </div>
       </div>
       <!-- Second Item -->
-      <div class="row">
+      <div class="row" id="feature-two">
         <div class="col-md-6 features-text">
           <h3>Comfortable and Modern Interior</h3>
           <p>
@@ -114,13 +125,21 @@
           </p>
         </div>
         <div class="col-md-6">
-          <img src="images/crosstrek5.webp" alt="2024 Subaru Crosstek" />
+          <img
+            src="images/crosstrek5.webp"
+            alt="Subaru Crosstek Comfortable and Modern Interior"
+            loading="lazy"
+          />
         </div>
       </div>
       <!-- Third Item -->
-      <div class="row">
+      <div class="row" id="feature-three">
         <div class="col-md-6">
-          <img src="images/crosstrek4.webp" alt="2024 Subaru Crosstek" />
+          <img
+            src="images/crosstrek4.webp"
+            alt="2024 Subaru Crosstek"
+            loading="lazy"
+          />
         </div>
         <div class="col-md-6 features-text">
           <h3>Safe, Convenient, and Entertaining</h3>
@@ -136,19 +155,21 @@
         </div>
       </div>
     </section>
-    <footer>
+    <footer id="contact">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-4">
             <p>Connect with Us</p>
-            <ol>
+            <hr />
+            <ol class="footer-links">
               <li><a href="tel:555-877-5434">Sales: 555-877-5434</a></li>
               <li><a href="tel:555-877-5435">Service: 555-877-5435</a></li>
             </ol>
           </div>
           <div class="col-md-4">
             <p>About Subaru</p>
-            <ol>
+            <hr />
+            <ol class="footer-links">
               <li><a href="">Our Company</a></li>
               <li><a href="">Diversity, Equity, Inclusion & Belonging</a></li>
               <li><a href="">Corporate Responsibility</a></li>
@@ -161,17 +182,14 @@
           </div>
           <div class="col-md-4">
             <p>Directions</p>
-            <ol>
-              <li><a href="/hours.aspx">1326 SE Enterprise, Charlotte, NC 28204</a></li>
+            <hr />
+            <ol class="footer-links">
+              <li>
+                <a href="/hours.aspx"
+                  >1326 SE Enterprise, Charlotte, NC 28204</a
+                >
+              </li>
             </ol>
-            <iframe
-              width="600"
-              height="400"
-              frameborder="0"
-              style="border: 0"
-              src="https://www.google.com/maps/embed/v1/place?q=1326+SE+Enterprise,+Charlotte,+NC+28204&key=YOUR_API_KEY"
-              allowfullscreen
-            ></iframe>
           </div>
         </div>
       </div>
