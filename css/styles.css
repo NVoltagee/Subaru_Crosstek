@@ -197,3 +197,10 @@ p.general_info_label.general_info_label--pretext {
   margin-bottom: 24px;
   color: #e9df7f;
 }
+
+footer {
+  padding: 64px;
+  background-color: #64421f;
+  color: #fbf9eb;
+  font-size: 2rem;
+}
