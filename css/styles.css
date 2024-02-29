@@ -56,15 +56,8 @@ header {
   padding: 20px 35px;
 }
 
-#menu-icon {
-  font-size: 24px;
-  cursor: pointer;
-  color: var(--text-color);
-  display: none;
-}
-
 .logo {
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: 700;
   color: var(--main-color);
 }
@@ -102,18 +95,17 @@ header {
 }
 
 .home-text {
-  padding-left: 130px;
   text-align: center;
 }
 
 .home-text h1 {
-  font-size: 2.4rem;
+  font-size: 4.5rem;
 }
 
 .home-text p {
-  font-size: 0.938rem;
+  font-size: 1.938rem;
   font-weight: 300;
-  margin: 0.5rem 0 1.2rem;
+  margin: 32px 0;
 }
 
 .btn {
@@ -181,8 +173,17 @@ p.general_info_label.general_info_label--pretext {
 }
 
 .car-features {
-  background-color: #18181b;
   color: #fbf9eb;
+}
+
+#feature-one {
+  background-color: #64421f;
+}
+#feature-two {
+  background-color: #3a220e;
+}
+#feature-three {
+  background-color: #64421f;
 }
 
 .car-features .features-text {
@@ -199,8 +200,16 @@ p.general_info_label.general_info_label--pretext {
 }
 
 footer {
-  padding: 64px;
-  background-color: #64421f;
+  padding: 48px;
+  background-color: #18181b;
   color: #fbf9eb;
   font-size: 2rem;
+}
+
+.footer-links {
+  line-height: 4.5rem;
+}
+
+.footer-links a {
+  color: #e9df7f;
 }
